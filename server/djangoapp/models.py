@@ -23,6 +23,7 @@ class CarModel(models.Model):
         ('COUPE', 'Coupe'),
         ('VAN', 'Van'),
         ('SEDAN', 'Sedan'),
+        ('WAGON', 'Wagon')
     ]
     type = models.CharField(max_length=10, choices=CAR_TYPES, default='SEDAN')
     year = models.IntegerField(default=2023,
